@@ -9,13 +9,11 @@ function readMoreToggler(options = {}) {
   document.head.appendChild(styleEle);
 
   var defaultOptions = {
-    charLimit: 100, // default is 100
-    expandText: "Read more", // default is 'read more'
-    collapseText: "Show less", // default is 'read less'
+    charLimit: 100,
+    expandText: "Read more",
+    collapseText: "Show less",
+    ...options,
   };
-  if (options) {
-    defaultOptions = { ...options };
-  }
 
   var ptextALL = document.querySelectorAll("p.read-more");
   for (let ptext of ptextALL) {

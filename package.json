@@ -1,6 +1,6 @@
 {
   "name": "read-more-toggler",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Read more toggler",
   "main": "main.js",
   "scripts": {

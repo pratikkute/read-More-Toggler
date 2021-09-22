@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>text read me</title>
+  <title>Read more toggler</title>
 </head>
 
 
@@ -37,11 +37,9 @@
       officiis neque provident cum mollitia vitae quos atque assumenda amet animi eos in dignissimos aut, totam impedit
       eum! Minima harum iste vitae ex placeat? Ipsum, perspiciatis? Inventore consequuntur doloremque alias porro dolor
     </p>
-
   </div>
   <p class="read-more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi vitae veniam provident
-    odit error facilis
-    quaerat voluptate soluta quas ratione numquam nesciunt reprehenderit quisquam eius fugiat, praesentium eaque fugit
+    odit error facilis quaerat voluptate soluta quas ratione numquam nesciunt reprehenderit quisquam eius fugiat, praesentium eaque fugit
     repellat suscipit labore hic. Eaque cupiditate facere cum, odit enim placeat, officia molestiae in, voluptate
     veniam deleniti hic. Magnam atque quasi consectetur sed quibusdam tenetur nam saepe maiores sit asperiores. Soluta
     quisquam totam maxime, qui obcaecati sapiente doloremque error at quis, rem recusandae reiciendis vero saepe,
@@ -50,18 +48,19 @@
   </p>
   <div>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis enim explicabo totam modi odio nemo sint aliquid
-      iure debitis!</p>
+      iure debitis!
+    </p>
 
   </div>
 
-<script type="module">
-  import { readMoreToggler } from "./main.js";
-  readMoreToggler({
-    charLimit: 250, // default is 100
-    expandText:       'show more', // default is 'Read more'
-    userCollapseText: 'show less'  // default is 'Read less'
-  })
-</script>
+  <script type="module">
+    import { readMoreToggler } from "./main.js";
+    readMoreToggler({
+      charLimit: 250, // default is 100
+      expandText: 'show more', // default is 'Read more'
+      userCollapseText: 'show less'  // default is 'Read less'
+    })
+  </script>
 
 </body>
 

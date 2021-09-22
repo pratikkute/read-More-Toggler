@@ -11,7 +11,7 @@ function readMoreToggler(options = {}) {
   var defaultOptions = {
     charLimit: 100, // default is 100
     expandText: "Read more", // default is 'read more'
-    userCollapseText: "Show less", // default is 'read less'
+    collapseText: "Show less", // default is 'read less'
   };
   if (options) {
     defaultOptions = { ...options };
@@ -39,7 +39,7 @@ function readMoreToggler(options = {}) {
       if (this.getAttribute("data-more") == 0) {
         this.setAttribute("data-more", 1);
         this.style.display = "block";
-        this.innerHTML = defaultOptions.userCollapseText;
+        this.innerHTML = defaultOptions.collapseText;
 
         this.previousElementSibling.style.display = "none";
         this.previousElementSibling.previousElementSibling.style.display =

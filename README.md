@@ -1,10 +1,10 @@
 # Read more toggler ..
 
-A simple pure javascript package to trunket paragraphs and add functionality to expand with read more and read less.
+A simple pure javascript package to truncate paragraphs and add functionality to expand with read more and read less.
 Just add  `class="read-more"` in your p element.
 
 ```bash
-npm install read-more-toggler
+npm i read-more-toggler
 ```
 
 ```html
@@ -15,7 +15,7 @@ npm install read-more-toggler
   readMoreToggler({
     charLimit: 250, // default is 100
     expandText: "show more", // default is 'Read more'
-    userCollapseText: "collapse", // default is 'Show less'
+    collapseText: "collapse", // default is 'Show less'
   });
 </script>
 ```
